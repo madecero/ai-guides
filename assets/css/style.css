@@ -25,6 +25,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body:has(.guide-fullscreen) {
+  overflow: hidden;
+  background: #000;
+}
+
 /* Main guides page */
 .guides-container {
   max-width: 1200px;
@@ -173,72 +178,29 @@ body {
   color: var(--accent);
 }
 
-/* Guide detail page */
-.guide-detail {
-  max-width: 100%;
+/* Guide fullscreen page */
+.guide-fullscreen {
+  width: 100vw;
+  height: 100vh;
   margin: 0;
-  padding: 20px 0 0 0;
-}
-
-.back-nav {
-  margin-bottom: 20px;
-  padding: 0 20px;
-}
-
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  color: var(--text-dim);
-  text-decoration: none;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: all 0.2s;
-}
-
-.back-link:hover {
-  color: var(--accent);
-  gap: 12px;
-}
-
-.guide-detail-header {
-  margin-bottom: 20px;
-  padding: 0 20px;
-}
-
-.guide-detail-header h1 {
-  font-size: 2rem;
-  font-weight: 900;
-  margin-bottom: 8px;
-  letter-spacing: -0.02em;
-}
-
-.guide-meta {
-  display: flex;
-  gap: 20px;
-  color: var(--text-dim);
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  padding: 0;
+  overflow: hidden;
 }
 
 /* Artifact embed */
 .artifact-container {
-  margin-bottom: 40px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .artifact-embed {
-  width: 100vw;
-  height: calc(100vh - 100px);
-  min-height: 600px;
+  width: 100%;
+  height: 100%;
   background: transparent;
   border: none;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
+  display: block;
 }
 
 .artifact-notice {
