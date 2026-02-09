@@ -6,14 +6,11 @@ description: "Implementation reference for Kalshi arbitrage on OpenClaw. Archite
 date: 2026-02-09
 author: "Human Agency"
 permalink: /guides/kalshi-architecture/
-artifact_url: "/assets/artifacts/kalshi-architecture-reference.html"
+redirect_to: /assets/artifacts/kalshi-architecture-reference.html
 ---
 
-<iframe 
-  src="{{ page.artifact_url | relative_url }}"
-  class="artifact-embed"
-  title="{{ page.title }}"
-  frameborder="0"
-  allow="clipboard-write"
-  allowfullscreen>
-</iframe>
+<script>window.location.href = "{{ '/assets/artifacts/kalshi-architecture-reference.html' | relative_url }}";</script>
+<noscript>
+  <meta http-equiv="refresh" content="0; url={{ '/assets/artifacts/kalshi-architecture-reference.html' | relative_url }}">
+</noscript>
+<p>Redirecting to <a href="{{ '/assets/artifacts/kalshi-architecture-reference.html' | relative_url }}">Kalshi Architecture Reference</a>...</p>
