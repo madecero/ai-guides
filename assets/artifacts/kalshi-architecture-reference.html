@@ -221,6 +221,25 @@
             -ms-overflow-style: none;
         }
 
+        .toc-bar .author-link {
+            margin-left: auto;
+            flex-shrink: 0;
+            font-size: .78rem;
+            color: var(--text-muted);
+            white-space: nowrap;
+            padding: .7rem .85rem;
+            border-bottom: none;
+        }
+
+        .toc-bar .author-link span {
+            color: var(--accent-2);
+            transition: color var(--transition);
+        }
+
+        .toc-bar .author-link:hover span {
+            color: var(--accent);
+        }
+
         .toc-bar nav::-webkit-scrollbar {
             display: none;
         }
@@ -1009,6 +1028,7 @@
             <a href="#ops"><span class="num">07</span> Operations</a>
             <a href="#phases"><span class="num">08</span> Phases</a>
             <a href="#apply"><span class="num">09</span> Apply</a>
+            <a href="https://github.com/madecero" target="_blank" class="author-link desktop-only">Author: <span>Michael DeCero</span></a>
         </nav>
     </div>
 
@@ -1017,6 +1037,7 @@
      ═══════════════════════════════════════════════════════ -->
     <header id="intro" class="hero">
         <div class="wrapper">
+            <a href="https://github.com/madecero" target="_blank" class="hero-author mobile-only" style="display:none;font-size:.78rem;color:var(--text-muted);text-decoration:none;margin-bottom:.75rem;">Author: <span style="color:var(--accent-2);">Michael DeCero</span></a>
             <span class="badge">📈 Implementation Reference</span>
             <h1>Kalshi Prediction Market Arbitrage<br>on OpenClaw</h1>
             <p class="subtitle">
